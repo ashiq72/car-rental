@@ -1,0 +1,9 @@
+.background-gradient {
+  background: linear-gradient(94.25deg, #2b59ff 0%, #bb2bff 100%);
+}
+.background-gradient:hover {
+  background: linear-gradient(94.25deg, #5c7fff 0%, #cb5cff 100%);
+}
+.background-gradient:default {
+  background: linear-gradient(94.25deg, #2b59ff 0%, #bb2bff 100%);
+}

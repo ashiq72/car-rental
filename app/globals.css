@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Outfit", sans-serif;
+}
+:root {
+  --color-primary: #b7b8bb;
+  --color-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+/*----------------
+Font style 
+---------------- */
+.text_outfit {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 66px;
+  text-align: center;
+  color: #605f5f;
+}
+.h1_outfit {
+  /* H1 */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 66px;
+  /* identical to box height, or 110% */
+  text-align: center;
+  /* White */
+  color: #fafafa;
+}
+.h2_outfit {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 48px;
+  color: #ffffff;
+}
+.h3_outfit {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  /* identical to box height, or 142% */
+  text-align: center;
+  /* 01 */
+  color: #ffffff;
+}
+.text_inter {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 66px;
+  /* identical to box height, or 110% */
+  text-align: center;
+  color: #605f5f;
+}
+.h4_inter {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+  /* white */
+  color: #ffffff;
+}
+.h5_inter {
+  /* H5 */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  display: flex;
+  align-items: center;
+  /* white */
+  color: #ffffff;
+}
+.body1_intel {
+  /* body 1 */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+  text-align: center;
+  /* White */
+  color: #fafafa;
+  opacity: 0.7;
+}
+.body2_intel {
+  /* body 2 */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 34px;
+  /* identical to box height, or 212% */
+  /* Paragraph 2 */
+  color: #fafafa;
+  opacity: 0.7;
+}
+/*----------------
+Button style 
+---------------- */
+.button_box {
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  gap: 10px;
+  /* gradient */
+  background: linear-gradient(94.25deg, #2b59ff 0%, #bb2bff 100%);
+  border-radius: 5px;
+}
+.button_frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 9px;
+  width: 127px;
+  height: 24px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.button_txt {
+  width: 127px;
+  height: 24px;
+  /* Inter/Semi-bold/16px */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  display: flex;
+  align-items: center;
+  text-align: right;
+  /* white */
+  color: #ffffff;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
