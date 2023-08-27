@@ -13,6 +13,7 @@ export const getCarsList = async () => {
         publishedAt
         image {
           id
+          url
         }
       }
     }
