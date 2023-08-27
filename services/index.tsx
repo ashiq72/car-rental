@@ -15,6 +15,7 @@ export const getCarsList = async () => {
           id
           url
         }
+        carBrand
       }
     }
   `;
