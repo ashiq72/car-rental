@@ -1,8 +1,7 @@
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200"></a>
-  <br>
-  Markdownify
+ 
+ Car Rental
   <br>
 </h1>
 
@@ -15,8 +14,6 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
-
 ## Key Features
 
 - LivePreview - Make changes, See changes
@@ -25,7 +22,7 @@
   - While you type, LivePreview will automatically scroll to the current location you're editing.
 - GitHub Flavored Markdown
 - Syntax highlighting
-- [KaTeX](https://khan.github.io/KaTeX/) Support
+- [KaTeX](https://github.com/ashiq72) Support
 - Dark/Light mode
 - Toolbar for basic Markdown formatting
 - Supports multiple cursors
@@ -43,34 +40,30 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
+$ git clone https://github.com/ashiq72/car-rental.git
 
 # Go into the repository
-$ cd electron-markdownify
+$ cd car-rental
 
 # Install dependencies
 $ npm install
 
 # Run the app
-$ npm start
+$ npm run dev
 ```
 
 > **Note**
 > If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
-## Download
-
-You can [download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0) the latest installable version of Markdownify for Windows, macOS and Linux.
-
 ## Emailware
 
-Markdownify is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <bullredeyes@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
+Markdownify is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <ahmedashik18k@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
 
 ## Credits
 
 This software uses the following open source packages:
 
-- [Electron](http://electron.atom.io/)
+- Next Js
 - [Node.js](https://nodejs.org/)
 - [Marked - a markdown parser](https://github.com/chjj/marked)
 - [showdown](http://showdownjs.github.io/showdown/)
@@ -79,8 +72,6 @@ This software uses the following open source packages:
 - [highlight.js](https://highlightjs.org/)
 
 ## Related
-
-[markdownify-web](https://github.com/amitmerchant1990/markdownify-web) - Web version of Markdownify
 
 ## Support
 
@@ -94,8 +85,8 @@ This software uses the following open source packages:
 
 ## You may also like...
 
-- [Pomolectron](https://github.com/amitmerchant1990/pomolectron) - A pomodoro app
-- [Correo](https://github.com/amitmerchant1990/correo) - A menubar/taskbar Gmail App for Windows and macOS
+- [Pomolectron](https://github.com/ashiq72) - A pomodoro app
+- [Correo](https://github.com/ashiq72) - A menubar/taskbar Gmail App for Windows and macOS
 
 ## License
 
@@ -103,6 +94,6 @@ MIT
 
 ---
 
-> [amitmerchant.com](https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
+> [ashiquzzaman.netlify.app](https://ashiquzzaman.netlify.app/) &nbsp;&middot;&nbsp;
 > GitHub [@amitmerchant1990](https://github.com/ashiq72) &nbsp;&middot;&nbsp;
 > Twitter [@amit_merchant](https://twitter.com/)
