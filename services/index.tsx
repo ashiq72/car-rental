@@ -4,15 +4,16 @@ export const getCarsList = async () => {
   const query = gql`
     query MyQuery {
       carlist {
-        id
-        carBrand
         carAvg
         carType
         createdAt
-        price
+        id
         name
-        image
-        updatedAt
+        price
+        publishedAt
+        image {
+          id
+        }
       }
     }
   `;
