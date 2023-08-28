@@ -1,38 +1,32 @@
 <h1 align="center">
   <br>
- 
  Car Rental
   <br>
 </h1>
 
 <p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#download">Download</a> •
-  <a href="#credits">Credits</a> •
-  <a href="#related">Related</a> •
-  <a href="#license">License</a> •
+  Live Site: <a href="https://car-rental-olive-one.vercel.app/">https://car-rental-olive-one.vercel.app/
+</a>
+  
 </p>
 
-## Key Features
+## Project Features
 
-- LivePreview - Make changes, See changes
-  - Instantly see what your Markdown documents look like in HTML as you create them.
-- Sync Scrolling
-  - While you type, LivePreview will automatically scroll to the current location you're editing.
-- GitHub Flavored Markdown
-- Syntax highlighting
-- [KaTeX](https://github.com/ashiq72) Support
-- Dark/Light mode
-- Toolbar for basic Markdown formatting
-- Supports multiple cursors
-- Save the Markdown preview as PDF
-- Emoji support in preview :tada:
-- App will keep alive in tray for quick usage
-- Full screen mode
-  - Write distraction free.
-- Cross platform
-  - Windows, macOS and Linux ready.
+- [Clerk](https://clerk.com/) Authentication- user management
+- [HyGraph](https://hygraph.com/) - products management platform
+  - Get all products and Shown by card.
+  - Get all Particular user location. It will be shown when the user books a car and the user can select a particular location from the dropdown menu.
+- Booking Modal
+  - When a user clicks a Rent Now button on the card a popup booking model option will show.
+- All Node package manager:
+  - clerk : Authentication- user management for Login and Signup
+  - graphql : A query language for your API
+  - graphql-request : Minimal GraphQL API request
+  - keygrip : Authentication- user management for Login and Signup
+  - react-icons : Include popular icons
+  - tailwindcss : CSS framework
+  - daisyui : component library for Tailwind CSS
+  - typescript : Strongly typed programming language for JavaScript
 
 ## How To Use
 
@@ -57,7 +51,7 @@ $ npm run dev
 
 ## Emailware
 
-Markdownify is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <ahmedashik18k@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
+Car Rental is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <ahmedashik18k@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
 
 ## Credits
 
@@ -75,7 +69,7 @@ This software uses the following open source packages:
 
 <p>Or</p>
 
-<a href="https://www.patreon.com/amitmerchant">
+<a href="">
 	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
 </a>
 
