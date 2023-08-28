@@ -85,5 +85,5 @@ MIT
 ---
 
 > [ashiquzzaman.netlify.app](https://ashiquzzaman.netlify.app/) &nbsp;&middot;&nbsp;
-> GitHub [@amitmerchant1990](https://github.com/ashiq72) &nbsp;&middot;&nbsp;
-> Twitter [@amit_merchant](https://twitter.com/)
+> GitHub [@ashiq72](https://github.com/ashiq72) &nbsp;&middot;&nbsp;
+> Twitter [@ashiq72](https://twitter.com/)
