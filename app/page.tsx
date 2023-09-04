@@ -10,8 +10,8 @@ export default function Home() {
   const [carsList, setCarsList] = useState<any>([]);
   const [carsOrgList, setCarsOrgList] = useState<any>([]);
 
-  console.log(carsList);
-  console.log(carsOrgList);
+  // console.log(carsList);
+  // console.log(carsOrgList);
 
   useEffect(() => {
     getCarList_();

@@ -1,11 +1,9 @@
-// import { BookCreatedFlagContext } from "@/context/BookCreatedFlagContext";
-// import { createBooking, getStoreLocations } from "@/services";
-import { useUser } from "@clerk/nextjs";
+import { createBooking, getStoreLocation } from "@/services";
 import React, { useContext, useEffect, useState } from "react";
 
 function Form({ car }: any) {
   const [storeLocation, setStoreLocation] = useState<any>([]);
-  //   const {showToastMsg,setShowToastMsg}=useContext(BookCreatedFlagContext)
+
   const [formValue, setFormValue] = useState({
     location: "",
     pickUpDate: "",
@@ -14,26 +12,27 @@ function Form({ car }: any) {
     dropOffTime: "",
     contactNumber: "",
     userName: "Rahul Sanap",
-    carId: "",
+    carId: { connect: { id: "" } },
   });
 
   const today: any = new Date();
-  //   useEffect(() => {
-  //     getStoreLocation_();
-  //   }, []);
+  useEffect(() => {
+    getStoreLocation_();
+  }, []);
 
   useEffect(() => {
     if (car) {
       setFormValue({
         ...formValue,
-        carId: car.id,
+        carId: { connect: { id: car.id } },
+        // carId: car.id,
       });
     }
   }, [car]);
-  //   const getStoreLocation_ = async () => {
-  //     const resp: any = await getStoreLocations();
-  //     setStoreLocation(resp?.storesLocations);
-  //   };
+  const getStoreLocation_ = async () => {
+    const resp: any = await getStoreLocation();
+    setStoreLocation(resp?.storesLocations);
+  };
 
   const handleChange = (event: any) => {
     setFormValue({
@@ -44,8 +43,8 @@ function Form({ car }: any) {
 
   const handleSubmit = async () => {
     console.log(formValue);
-    // const resp = await createBooking(formValue);
-    // console.log(resp);
+    const resp = await createBooking(formValue);
+    console.log(resp);
     // if (resp) {
     //   setShowToastMsg(true);
     // }
