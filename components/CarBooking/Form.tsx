@@ -12,8 +12,10 @@ function Form({ car }: any) {
     dropOffTime: "",
     contactNumber: "",
     userName: "Rahul Sanap",
-    carId: { connect: { id: "" } },
+    carId: "",
   });
+
+  console.log(formValue.carId);
 
   const today: any = new Date();
   useEffect(() => {
@@ -24,8 +26,8 @@ function Form({ car }: any) {
     if (car) {
       setFormValue({
         ...formValue,
-        carId: { connect: { id: car.id } },
-        // carId: car.id,
+        // carId: { connect: { id: car.id } },
+        carId: car.id,
       });
     }
   }, [car]);
