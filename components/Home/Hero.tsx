@@ -43,25 +43,27 @@ export default function Hero() {
             <SwiperSlide>
               <div className="carousel-item">
                 <Image
-                  src="https://i.postimg.cc/ZntGzCL2/1.jpg"
+                  src="https://i.postimg.cc/C1mZ46bv/2.jpg"
                   alt=""
                   height={900}
                   width={1920}
                 />
               </div>
             </SwiperSlide>
-            {/* <SwiperSlide>
-              <Image
-                src="https://i.postimg.cc/rFZrhMm5/2.jpg"
-                alt=""
-                height={900}
-                width={1920}
-              />
-            </SwiperSlide> */}
             <SwiperSlide>
               <div className="carousel-item">
                 <Image
-                  src="https://i.postimg.cc/T2LJFThj/pexels-andrea-piacquadio-760015-1.jpg"
+                  src="https://i.postimg.cc/YSBm2Fpx/3.jpg"
+                  alt=""
+                  height={900}
+                  width={1920}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="carousel-item">
+                <Image
+                  src="https://i.postimg.cc/ZntGzCL2/1.jpg"
                   alt=""
                   height={900}
                   width={1920}
@@ -73,7 +75,7 @@ export default function Hero() {
         {/* Slider for small screen  */}
         <div className="lg:hidden sm:flex">
           <Swiper
-            navigation={true}
+            // navigation={true}
             modules={[Navigation, Autoplay]}
             slidesPerView={1}
             loop={true}
@@ -86,44 +88,44 @@ export default function Hero() {
             }}
           >
             <SwiperSlide>
-              <Image
-                src="https://www.aarong.com/media/mageplaza/bannerslider/banner/image/mobile_image/r/1/r1-mb-23082023.jpg"
-                alt=""
-                height={900}
-                width={1920}
-              />
+              <div className="carousel-item">
+                <Image
+                  src="https://i.postimg.cc/Vkfy94Bh/s-1.jpg"
+                  alt=""
+                  height={900}
+                  width={1920}
+                />
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <Image
-                src="https://www.aarong.com/media/mageplaza/bannerslider/banner/image/mobile_image/r/2/r2-mb-23082023.jpg"
-                alt=""
-                height={900}
-                width={1920}
-              />
+              <div className="carousel-item">
+                <Image
+                  src="https://i.postimg.cc/5NMWyfHb/s-2.jpg"
+                  alt=""
+                  height={900}
+                  width={1920}
+                />
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <Image
-                src="https://www.aarong.com/media/mageplaza/bannerslider/banner/image/mobile_image/r/3/r3-mb-23082023-revised.jpg"
-                alt=""
-                height={900}
-                width={1920}
-              />
+              <div className="carousel-item">
+                <Image
+                  src="https://i.postimg.cc/YqfKmTgg/s-3.jpg"
+                  alt=""
+                  height={900}
+                  width={1920}
+                />
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <Image
-                src="https://www.aarong.com/media/mageplaza/bannerslider/banner/image/mobile_image/r/4/r4-mb-23082023-revised.jpg"
-                alt=""
-                height={900}
-                width={1920}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                src="https://www.aarong.com/media/mageplaza/bannerslider/banner/image/mobile_image/r/5/r5-mb-23082023.jpg"
-                alt=""
-                height={900}
-                width={1920}
-              />
+              <div className="carousel-item">
+                <Image
+                  src="https://i.postimg.cc/SRc0dvvB/s-4.jpg"
+                  alt=""
+                  height={900}
+                  width={1920}
+                />
+              </div>
             </SwiperSlide>
           </Swiper>
         </div>
@@ -142,13 +144,13 @@ export default function Hero() {
               </h1>
             </Link>
             <div className="hidden md:flex gap-5 text-white text-lg">
-              <h2 className="hover:bg-blue-500 p-2 px-3 rounded-full hover:text-white cursor-pointer ">
+              <h2 className="hover:bg-yellow-500 ease-in duration-300 p-2 px-3 rounded-full hover:text-white cursor-pointer ">
                 Home
               </h2>
-              <h2 className="hover:bg-blue-500 p-2 px-3 rounded-full hover:text-white cursor-pointer ">
+              <h2 className="hover:bg-yellow-500 ease-in duration-300 p-2 px-3 rounded-full hover:text-white cursor-pointer ">
                 History
               </h2>
-              <h2 className="hover:bg-blue-500 p-2 px-3 rounded-full hover:text-white cursor-pointer ">
+              <h2 className="hover:bg-yellow-500 ease-in duration-300 p-2 px-3 rounded-full hover:text-white cursor-pointer ">
                 Content
               </h2>
             </div>
@@ -156,10 +158,10 @@ export default function Hero() {
           </div>
         </div>
         {/* Text section  */}
-        <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/2 z-20 flex-col lg:pl-16">
+        <div className="absolute flex justify-end transform -translate-y-1/2 lg:left-24 left-4 top-1/2 z-20 flex-col lg:pl-16 sm:pl-0">
           <div>
-            <div className="bg-slate-100 flex items-center rounded-2xl px-3 py-1 w-fit">
-              <span className="text-yellow-600 pr-2">
+            <div className="bg-slate-100 flex items-center rounded-2xl px-3 py-1 w-fit sm:text-sm">
+              <span className="text-yellow-600 pr-2 ">
                 <BiSolidLike />
               </span>
               {"  "}
@@ -174,10 +176,12 @@ export default function Hero() {
               Everything your taxi business needs is already here!
             </p>
             <div className="flex pt-5">
-              <button className="btn btn-success mr-5">
-                <Link href="#">Explore Now</Link>
+              <button className="btn btn-warning mr-5 warning hover:btn-neutral ease-in duration-200">
+                <Link href="#" className="text-base">
+                  Explore Now
+                </Link>
               </button>
-              <button className="btn btn-outline btn-success">
+              <button className="btn btn-outline btn-warning">
                 <Link href="/login">Login</Link>
               </button>
             </div>
