@@ -1,8 +1,10 @@
 import { createBooking, getStoreLocation } from "@/services";
 import React, { useContext, useEffect, useState } from "react";
+import toast from "react-hot-toast";
 
 function Form({ car }: any) {
   const [storeLocation, setStoreLocation] = useState<any>([]);
+  const [showToastMsg, setShowToastMsg] = useState<boolean>(false);
 
   const [formValue, setFormValue] = useState({
     location: "",
@@ -21,6 +23,16 @@ function Form({ car }: any) {
   useEffect(() => {
     getStoreLocation_();
   }, []);
+
+  useEffect(() => {
+    if (showToastMsg) {
+      const notify = () => toast("Here is your toast.");
+      notify();
+      setTimeout(function () {
+        setShowToastMsg(false);
+      }, 4000);
+    }
+  }, [showToastMsg]);
 
   useEffect(() => {
     if (car) {
@@ -47,9 +59,9 @@ function Form({ car }: any) {
     console.log(formValue);
     const resp = await createBooking(formValue);
     console.log(resp);
-    // if (resp) {
-    //   setShowToastMsg(true);
-    // }
+    if (resp) {
+      setShowToastMsg(true);
+    }
   };
 
   return (

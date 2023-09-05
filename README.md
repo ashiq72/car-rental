@@ -5,7 +5,7 @@
 </h1>
 
 <p align="center">
-  Live Site: <a href="https://car-rental-olive-one.vercel.app/">https://car-rental-olive-one.vercel.app/
+  Live Site: <a href="https://car-rental-olive-one.vercel.app/">https://startrental.vercel.app/
 </a>
   
 </p>

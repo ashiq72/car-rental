@@ -5,6 +5,7 @@ import Hero from "@/components/Home/Hero";
 import SearchInput from "@/components/Home/SearchInput";
 import { getCarsList } from "@/services";
 import { useEffect, useState } from "react";
+import { Toaster } from "react-hot-toast";
 
 export default function Home() {
   const [carsList, setCarsList] = useState<any>([]);
@@ -47,6 +48,7 @@ export default function Home() {
         setBrand={(value: string) => filterCarList(value)}
       />
       <CarsList carsList={carsList} />
+      <Toaster />
     </div>
   );
 }
