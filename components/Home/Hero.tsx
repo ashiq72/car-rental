@@ -7,11 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import Link from "next/link";
-import { LiaShoppingBagSolid } from "react-icons/lia";
-import { AiOutlineHeart } from "react-icons/ai";
-import { VscAccount } from "react-icons/vsc";
-import { FiSearch } from "react-icons/fi";
-import { IoLocationOutline } from "react-icons/io5";
+import { BsFillCarFrontFill } from "react-icons/bs";
 import { UserButton } from "@clerk/nextjs";
 
 export default function Hero() {
@@ -128,7 +124,15 @@ export default function Hero() {
         <div className=" w-full absolute z-10  top-0">
           <div className="flex items-center justify-between p-2 px-20 shadow-sm border-b-[1px] ">
             <Link href="/">
-              <Image src="/logo.png" alt="" height={150} width={150} />
+              {/* <Image src="/logo.png" alt="" height={150} width={150} /> */}
+              <h1 className="text-white font-extrabold text-2xl flex items-center">
+                <span className="text-yellow-500 pr-1">
+                  <BsFillCarFrontFill />
+                </span>
+                <span className="text-yellow-500 pr-1">Car </span>
+                Rental
+                <span className="text-yellow-500">.</span>
+              </h1>
             </Link>
             <div className="hidden md:flex gap-5">
               <h2 className="hover:bg-blue-500 p-2 px-3 rounded-full hover:text-white cursor-pointer ">
