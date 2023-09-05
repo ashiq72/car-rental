@@ -131,7 +131,7 @@ export default function Hero() {
         </div>
         {/* Navber  */}
         <div className=" w-full absolute z-10  top-0">
-          <div className="flex items-center justify-between p-2 px-20 shadow-sm border-b-[1px] ">
+          <div className="flex items-center justify-between p-2 lg:px-20 px-6 shadow-sm border-b-[1px] ">
             <Link href="/">
               {/* <Image src="/logo.png" alt="" height={150} width={150} /> */}
               <h1 className="text-white font-extrabold text-2xl flex items-center">
@@ -140,7 +140,7 @@ export default function Hero() {
                 </span>
                 <span className="text-yellow-500 pr-1">Car </span>
                 Rental
-                <span className="text-yellow-500">.</span>
+                <span className="text-yellow-500">..</span>
               </h1>
             </Link>
             <div className="hidden md:flex gap-5 text-white text-lg">
@@ -158,9 +158,9 @@ export default function Hero() {
           </div>
         </div>
         {/* Text section  */}
-        <div className="absolute flex justify-end transform -translate-y-1/2 lg:left-24 left-4 top-1/2 z-20 flex-col lg:pl-16 sm:pl-0">
+        <div className="absolute flex justify-end transform -translate-y-1/2 lg:px-40 px-4 top-1/2 z-20 flex-col  sm:pl-0">
           <div>
-            <div className="bg-slate-100 flex items-center rounded-2xl px-3 py-1 w-fit sm:text-sm">
+            <div className="bg-slate-100 flex items-start rounded-2xl px-3 py-1 w-fit sm:text-[10px]">
               <span className="text-yellow-600 pr-2 ">
                 <BiSolidLike />
               </span>
@@ -178,7 +178,7 @@ export default function Hero() {
             <div className="flex pt-5">
               <button className="btn btn-warning mr-5 warning hover:btn-neutral ease-in duration-200">
                 <Link href="#" className="text-base">
-                  Explore Now
+                  Rent Now
                 </Link>
               </button>
               <button className="btn btn-outline btn-warning">
