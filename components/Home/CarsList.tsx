@@ -13,7 +13,7 @@ export default function CarsList(props: any) {
   }, [props.carsList]);
 
   return (
-    <div className="p-5 sm:px-10 md:px-20 ">
+    <div className="p-5 px-10 md:px-20 ">
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
         {props.carsList.map((car: any, index: number) => (
           <div

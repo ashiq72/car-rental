@@ -158,21 +158,20 @@ export default function Hero() {
           </div>
         </div>
         {/* Text section  */}
-        <div className="absolute flex justify-end transform -translate-y-1/2 lg:px-40 px-4 top-1/2 z-20 flex-col  sm:pl-0">
+        <div className="absolute flex justify-end transform -translate-y-1/2 lg:px-40 px-4 lg:top-1/2 top-2/3 z-20 flex-col  sm:pl-0">
           <div>
-            <div className="bg-slate-100 flex items-start rounded-2xl px-3 py-1 w-fit sm:text-[10px]">
+            <div className="bg-slate-100 flex items-center rounded-2xl px-3 py-1 w-fit text-[12px] lg:text-base">
               <span className="text-yellow-600 pr-2 ">
                 <BiSolidLike />
               </span>
-              {"  "}
               100% Trusted car rental platform in the Bangladesh
             </div>
-            <h1 className="text-6xl pt-3 font-bold text-white">
+            <h1 className="lg:text-6xl text-3xl pt-3 font-bold text-white">
               Find Your Best Car for
               <br />
               <span className="text-yellow-500"> Rental</span>
             </h1>
-            <p className="text-xl text-white pt-5">
+            <p className="lg:text-xl text-lg text-white lg:pt-5 pt-3">
               Everything your taxi business needs is already here!
             </p>
             <div className="flex pt-5">

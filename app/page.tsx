@@ -3,6 +3,7 @@ import CarsList from "@/components/Home/CarsList";
 import CarsFiltersOption from "@/components/Home/CarsFiltersOption";
 import Hero from "@/components/Home/Hero";
 import Category from "@/components/Home/Category/Category";
+import Choose from "@/components/Home/Choose/Choose";
 import SearchInput from "@/components/Home/SearchInput";
 import { getCarsList } from "@/services";
 import { useEffect, useState } from "react";
@@ -46,8 +47,8 @@ export default function Home() {
         orderCarList={(value: string) => orderCarList(value)}
         setBrand={(value: string) => filterCarList(value)}
       />
-
       <CarsList carsList={carsList} />
+      <Choose />
       <Toaster />
     </div>
   );
