@@ -4,6 +4,7 @@ import CarsFiltersOption from "@/components/Home/CarsFiltersOption";
 import Hero from "@/components/Home/Hero";
 import Category from "@/components/Home/Category/Category";
 import Choose from "@/components/Home/Choose/Choose";
+import Footer from "@/components//Shared/Footer/Footer";
 import SearchInput from "@/components/Home/SearchInput";
 import { getCarsList } from "@/services";
 import { useEffect, useState } from "react";
@@ -50,6 +51,7 @@ export default function Home() {
       <CarsList carsList={carsList} />
       <Choose />
       <Toaster />
+      <Footer />
     </div>
   );
 }

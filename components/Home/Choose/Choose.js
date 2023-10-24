@@ -19,14 +19,14 @@ const Choose = () => {
     },
   ];
   return (
-    <div className="p-5 px-10 md:px-20 bg-neutral text-white py-24">
+    <div className="p-5 px-10 md:px-20  py-24">
       <div className="text-center pb-16">
         <h1 className="font-bold lg:text-4xl text-2xl">Why Choose Us</h1>
         <p className="text-base">
           Explore our first class limousine & car rental services
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-items-center gap-8 ">
         {chooseItems.map((item, index) => (
           <div
             className="flex flex-col items-center hover:-translate-y-1 duration-300 w-80"
