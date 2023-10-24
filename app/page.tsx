@@ -2,6 +2,7 @@
 import CarsList from "@/components/Home/CarsList";
 import CarsFiltersOption from "@/components/Home/CarsFiltersOption";
 import Hero from "@/components/Home/Hero";
+import Category from "@/components/Home/Category/Category";
 import SearchInput from "@/components/Home/SearchInput";
 import { getCarsList } from "@/services";
 import { useEffect, useState } from "react";
@@ -10,9 +11,6 @@ import { Toaster } from "react-hot-toast";
 export default function Home() {
   const [carsList, setCarsList] = useState<any>([]);
   const [carsOrgList, setCarsOrgList] = useState<any>([]);
-
-  // console.log(carsList);
-  // console.log(carsOrgList);
 
   useEffect(() => {
     getCarList_();
@@ -41,12 +39,14 @@ export default function Home() {
   return (
     <div className="">
       <Hero />
+      <Category />
       <SearchInput />
       <CarsFiltersOption
         carsList={carsOrgList}
         orderCarList={(value: string) => orderCarList(value)}
         setBrand={(value: string) => filterCarList(value)}
       />
+
       <CarsList carsList={carsList} />
       <Toaster />
     </div>

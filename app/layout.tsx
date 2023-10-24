@@ -1,7 +1,7 @@
 import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Outfit } from "next/font/google";
+import { Outfit } from "next/font/google";
 import Navber from "@/components/Navber";
 
 const inter = Outfit({ subsets: ["latin"] });
