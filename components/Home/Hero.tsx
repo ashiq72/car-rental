@@ -130,10 +130,10 @@ export default function Hero() {
           </Swiper>
         </div>
         {/* Navber  */}
-        <div className=" w-full absolute z-10  top-0">
+        {/* <div className=" w-full absolute z-10  top-0">
           <div className="flex items-center justify-between p-2 lg:px-20 px-6 shadow-sm border-b-[1px] ">
             <Link href="/">
-              {/* <Image src="/logo.png" alt="" height={150} width={150} /> */}
+             
               <h1 className="text-white font-extrabold text-2xl flex items-center">
                 <span className="text-yellow-500 pr-1">
                   <BsFillCarFrontFill />
@@ -156,7 +156,7 @@ export default function Hero() {
             </div>
             <UserButton afterSignOutUrl="/" />
           </div>
-        </div>
+        </div> */}
         {/* Text section  */}
         <div className="absolute flex justify-end transform -translate-y-1/2 lg:px-40 px-4 lg:top-1/2 top-2/3 z-20 flex-col  sm:pl-0">
           <div>

@@ -2,7 +2,7 @@
 import CarsList from "@/components/Home/CarsList";
 import CarsFiltersOption from "@/components/Home/CarsFiltersOption";
 import Hero from "@/components/Home/Hero";
-import Category from "@/components/Home/Category/Category";
+import CategoryList from "@/components/Home/CategoryList/CategoryList";
 import Choose from "@/components/Home/Choose/Choose";
 import Footer from "@/components//Shared/Footer/Footer";
 import SearchInput from "@/components/Home/SearchInput";
@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <div className="">
       <Hero />
-      <Category />
+      <CategoryList />
       <SearchInput />
       <CarsFiltersOption
         carsList={carsOrgList}

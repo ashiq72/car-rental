@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Category = () => {
+const CategoryList = () => {
   const categoryItems = [
     {
       name: "Audi",
@@ -43,9 +43,9 @@ const Category = () => {
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-items-center group gap-10 max-w-7xl mx-auto">
           {categoryItems.map((item, index) => (
             <Link
-              href=""
+              href="/category"
               className="flex items-center justify-center overflow-hidden group rounded relative
-              gradient-overlay hover:-translate-y-1
+              gradient-overlay hover:-translate-y-1 hover:shadow-2xl
               duration-300
              "
               key={index}
@@ -68,4 +68,4 @@ const Category = () => {
   );
 };
 
-export default Category;
+export default CategoryList;

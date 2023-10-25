@@ -29,7 +29,7 @@ const Choose = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-items-center gap-8 ">
         {chooseItems.map((item, index) => (
           <div
-            className="flex flex-col items-center hover:-translate-y-1 duration-300 w-80"
+            className="flex flex-col items-center hover:-translate-y-2 shadow-xl  rounded-lg p-6 duration-300 w-80"
             key={index}
           >
             <span className="text-6xl">{item.icon}</span>
@@ -42,38 +42,6 @@ const Choose = () => {
             </p>
           </div>
         ))}
-        {/* <div className="flex flex-col items-center">
-          <span className="text-6xl">
-            <AiFillCar />
-          </span>
-          <h1 className="text-yellow-500 text-2xl font-bold">
-            Variety of Car Brands
-          </h1>
-          <p className="text-center">
-            Lorem ipsum dolor sit amet, consectadipiscing elit. Aenean commodo
-            ligula eget dolor.
-          </p>
-        </div>
-        <div>
-          <span>
-            <AiFillCar />
-          </span>
-          <h1>Best Rate Guarantee</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectadipiscing elit. Aenean commodo
-            ligula eget dolor.
-          </p>
-        </div>
-        <div>
-          <span>
-            <AiFillCar />
-          </span>
-          <h1>Awesome Customer Support</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectadipiscing elit. Aenean commodo
-            ligula eget dolor.
-          </p>
-        </div> */}
       </div>
     </div>
   );

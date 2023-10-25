@@ -2,7 +2,7 @@ import Image from "next/image";
 import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 
-export default function Navber() {
+export default function Navber3() {
   return (
     <div className="flex items-center justify-between p-2 px-20 shadow-sm border-b-[1px] ">
       <Link href="/">

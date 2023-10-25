@@ -2,7 +2,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
-import Navber from "@/components/Navber";
+import Header from "@/components/Shared/Header/Header";
 
 const inter = Outfit({ subsets: ["latin"] });
 
@@ -20,7 +20,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={inter.className}>
-          {/* <Navber /> */}
+          <Header />
           {children}
         </body>
       </html>
