@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import CarCard from "./CarCard";
-import CarCardSkelton from "./CarCardSkelton";
-import BookingModal from "../CarBooking/BookingModal";
+// import CarCard from "./CarCard";
+// import CarCardSkelton from "./CarCardSkelton";
+// import BookingModal from "../CarBooking/BookingModal";
 
-export default function CarsList(props: any) {
+export default function Products(props: any) {
   const [isLoaded, setIsLoaded] = useState(true);
   const [selectedCar, setSelectedCar] = useState<any>([]);
   useEffect(() => {
@@ -23,14 +23,14 @@ export default function CarsList(props: any) {
               setSelectedCar(car);
             }}
           >
-            <CarCard car={car} />
+            {/* <CarCard car={car} /> */}
           </div>
         ))}
-        {isLoaded ? [1, 2, 3, 4, 5].map((item) => <CarCardSkelton />) : null}
+        {/* {isLoaded ? [1, 2, 3, 4, 5].map((item) => <CarCardSkelton />) : null} */}
 
         {/* You can open the modal using ID.showModal() method */}
 
-        <BookingModal car={selectedCar} />
+        {/* <BookingModal car={selectedCar} /> */}
       </div>
     </div>
   );

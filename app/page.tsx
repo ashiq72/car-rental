@@ -1,14 +1,12 @@
 "use client";
-import CarsList from "@/components/Home/CarsList";
+
 import CarsFiltersOption from "@/components/Home/CarsFiltersOption";
-import Hero from "@/components/Home/Hero";
-import CategoryList from "@/components/Home/CategoryList/CategoryList";
-import Choose from "@/components/Home/Choose/Choose";
+
 import Footer from "@/components//Shared/Footer/Footer";
-import SearchInput from "@/components/Home/SearchInput";
 import { getCarsList } from "@/services";
 import { useEffect, useState } from "react";
 import { Toaster } from "react-hot-toast";
+import HomePage from "@/components/Home/Home/HomePage";
 
 export default function Home() {
   const [carsList, setCarsList] = useState<any>([]);
@@ -40,16 +38,16 @@ export default function Home() {
 
   return (
     <div className="">
-      <Hero />
-      <CategoryList />
-      <SearchInput />
-      <CarsFiltersOption
+      <HomePage />
+
+      {/* <SearchInput /> */}
+      {/* <CarsFiltersOption
         carsList={carsOrgList}
         orderCarList={(value: string) => orderCarList(value)}
         setBrand={(value: string) => filterCarList(value)}
       />
-      <CarsList carsList={carsList} />
-      <Choose />
+      <CarsList carsList={carsList} /> */}
+
       <Toaster />
       <Footer />
     </div>

@@ -40,7 +40,7 @@ export default function Header() {
   }, [lastScrollY]);
   return (
     <div
-      className={`w-full flex justify-center z-40 fixed top-0 transition-transform duration-300  mx-auto text-white shadow-lg  ${show} ${
+      className={`w-full flex justify-center z-40 fixed top-0 transition-transform duration-300 px-4 mx-auto text-white shadow-lg  ${show} ${
         navBg ? "bg-black/75" : ""
       } `}
     >

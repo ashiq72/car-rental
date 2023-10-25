@@ -4,7 +4,7 @@ import { FaGasPump } from "react-icons/fa";
 
 import { MdAirlineSeatReclineNormal } from "react-icons/md";
 import { PiSteeringWheelFill } from "react-icons/pi";
-export default function CarCard(props: any) {
+export default function ProductCard(props: any) {
   const [car, setCar] = useState(props.car);
 
   useEffect(() => {

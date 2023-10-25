@@ -20,9 +20,6 @@ export default function CarsFiltersOption({
       BrandSet.add(element.carBrand);
     });
 
-    // console.log(BrandSet);
-    // console.log(brandList);
-
     setBrandList(Array.from(BrandSet));
   };
   return (
