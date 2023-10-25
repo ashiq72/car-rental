@@ -40,13 +40,13 @@ export default function Header() {
   }, [lastScrollY]);
   return (
     <div
-      className={`w-full flex justify-center z-40 sticky top-0 transition-transform duration-300  mx-auto text-white  ${show} ${
+      className={`w-full flex justify-center z-40 fixed top-0 transition-transform duration-300  mx-auto text-white shadow-lg  ${show} ${
         navBg ? "bg-black/75" : ""
       } `}
     >
       <div
-        className={`max-w-[1600px] h-[50px] w-full shadow-lg transition-transform duration-200 mx-auto  flex items-center justify-between  ${
-          navBg ? "" : "bg-transparent fixed"
+        className={`max-w-[1600px] h-[50px] w-full  transition-transform duration-200 mx-auto  flex items-center justify-between  ${
+          navBg ? "" : "bg-transparent"
         }`}
       >
         <Link href="/">
