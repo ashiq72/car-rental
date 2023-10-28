@@ -1,21 +1,25 @@
+import HeaderComon from "@/components/Shared/Header/HeaderComon";
+
 import { useEffect, useState } from "react";
 // import CarCard from "./CarCard";
 // import CarCardSkelton from "./CarCardSkelton";
 // import BookingModal from "../CarBooking/BookingModal";
 
 export default function Products(props: any) {
-  const [isLoaded, setIsLoaded] = useState(true);
-  const [selectedCar, setSelectedCar] = useState<any>([]);
-  useEffect(() => {
-    if (props.carsList) {
-      setIsLoaded(false);
-    }
-  }, [props.carsList]);
+  // const [isLoaded, setIsLoaded] = useState(true);
+  // const [selectedCar, setSelectedCar] = useState<any>([]);
+  // useEffect(() => {
+  //   if (props.carsList) {
+  //     setIsLoaded(false);
+  //   }
+  // }, [props.carsList]);
 
   return (
-    <div className="p-5 px-10 md:px-20 ">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
-        {props.carsList.map((car: any, index: number) => (
+    <div>
+      <HeaderComon />
+      <div className="p-5 px-10 md:px-20 ">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
+          {/* {props.carsList.map((car: any, index: number) => (
           <div
             key={index}
             onClick={() => {
@@ -23,14 +27,15 @@ export default function Products(props: any) {
               setSelectedCar(car);
             }}
           >
-            {/* <CarCard car={car} /> */}
+            <CarCard car={car} />
           </div>
-        ))}
-        {/* {isLoaded ? [1, 2, 3, 4, 5].map((item) => <CarCardSkelton />) : null} */}
+        ))} */}
+          {/* {isLoaded ? [1, 2, 3, 4, 5].map((item) => <CarCardSkelton />) : null} */}
 
-        {/* You can open the modal using ID.showModal() method */}
+          {/* You can open the modal using ID.showModal() method */}
 
-        {/* <BookingModal car={selectedCar} /> */}
+          {/* <BookingModal car={selectedCar} /> */}
+        </div>
       </div>
     </div>
   );

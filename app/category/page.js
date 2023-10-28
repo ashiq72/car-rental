@@ -1,3 +1,9 @@
+import HeaderComon from "@/components/Shared/Header/HeaderComon";
+
 export default function Category() {
-  return <div>Hello</div>;
+  return (
+    <div>
+      <HeaderComon />
+    </div>
+  );
 }

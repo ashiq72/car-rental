@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import { UserButton } from "@clerk/nextjs";
+
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-export default function Header() {
+export default function HeaderHome() {
   const [show, setShow] = useState("translate-y-0");
   const [lastScrollY, setLastScrollY] = useState(0);
   const [navBg, setNavBg] = useState(false);
@@ -52,18 +52,33 @@ export default function Header() {
         <Link href="/">
           <Image src="/logo.png" alt="" height={150} width={150} />
         </Link>
-        <div className="hidden md:flex gap-5">
-          <h2 className="hover:bg-blue-500 p-2 px-3 rounded-full hover:text-white cursor-pointer ">
-            Home
+        <div className="hidden lg:flex gap-5">
+          <h2 className="hover:bg-yellow-500 py-1 px-3 rounded-full hover:text-white cursor-pointer duration-300">
+            About Us
           </h2>
-          <h2 className="hover:bg-blue-500 p-2 px-3 rounded-full hover:text-white cursor-pointer ">
-            History
+          <Link
+            href="/products"
+            className="hover:bg-yellow-500 duration-300 py-1 px-3 rounded-full hover:text-white cursor-pointer"
+          >
+            Auto Listing
+          </Link>
+          {/* <h2 className="hover:bg-blue-500 p-2 px-3 rounded-full hover:text-white cursor-pointer ">
+            WHAT WE OFFER
+          </h2> */}
+          <h2 className="hover:bg-yellow-500 duration-300 py-1 px-3 rounded-full hover:text-white cursor-pointer ">
+            Get In Touch
           </h2>
-          <h2 className="hover:bg-blue-500 p-2 px-3 rounded-full hover:text-white cursor-pointer ">
-            Content
+          <h2 className="hover:bg-yellow-500 duration-300 py-1 px-3 rounded-full hover:text-white cursor-pointer ">
+            Our Services
           </h2>
+          <Link
+            href="/addproduct"
+            className="hover:bg-yellow-500 duration-300 py-1 px-3 rounded-full hover:text-white cursor-pointer "
+          >
+            Dashboard
+          </Link>
         </div>
-        <UserButton afterSignOutUrl="/" />
+        {/* <UserButton afterSignOutUrl="/" /> */}
       </div>
     </div>
   );

@@ -1,8 +1,7 @@
-import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
-import Header from "@/components/Shared/Header/Header";
+// import Header from "@/components/Shared/Header/HeaderHome";
 
 const inter = Outfit({ subsets: ["latin"] });
 
@@ -17,13 +16,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider>
-      <html lang="en">
-        <body className={inter.className}>
-          <Header />
-          {children}
-        </body>
-      </html>
-    </ClerkProvider>
+    <html lang="en">
+      <body className={inter.className}>
+        {/* <Header /> */}
+        {children}
+      </body>
+    </html>
   );
 }
