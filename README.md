@@ -1,32 +1,33 @@
 <h1 align="center">
   <br>
- Car Rental
+ Drag & drop images gallery
   <br>
 </h1>
 
 <p align="center">
-  Live Site: <a href="https://car-rental-olive-one.vercel.app/">https://carrental-ashik72.vercel.app/
+  Live Site: <a href="https://image-gallery-drag-drop.vercel.app/">https://image-gallery-drag-drop.vercel.app/
 </a>
   
 </p>
 
 ## Project Features
 
-- [Clerk](https://clerk.com/) Authentication- user management
-- [HyGraph](https://hygraph.com/) - products management platform
-  - Get all products and Shown by card.
-  - Get all Particular user location. It will be shown when the user books a car and the user can select a particular location from the dropdown menu.
-- Booking Modal
-  - When a user clicks a Rent Now button on the card a popup booking model option will show.
-- All Node package manager:
-  - clerk : Authentication- user management for Login and Signup
-  - graphql : A query language for your API
-  - graphql-request : Minimal GraphQL API request
-  - keygrip : Authentication- user management for Login and Signup
-  - react-icons : Include popular icons
-  - tailwindcss : CSS framework
-  - daisyui : component library for Tailwind CSS
-  - typescript : Strongly typed programming language for JavaScript
+1. **Gallery Layout:**
+   - Implement a grid layout for the image gallery.
+   - The gallery should display images with one feature image larger than the others.
+2. **Sorting:**
+   - Enable reordering functionality to allow users to rearrange the order of images in the gallery.
+   - Implement drag-and-drop functionality or any other intuitive method for reordering.
+3. **Deleting Multiple Images:**
+   - Allow users to select multiple images and delete them.
+   - Provide a clear visual indication of selected images.
+4. **Setting Feature Image:**
+   - Allow users to set a feature image by sorting.
+   - Pretend the first image (from the LTR direction) as the featured image
+   - The feature image should be visually distinct from the other images.
+5. **User Experience:**
+   - Ensure a smooth and responsive user experience.
+   - Implement transitions or animations for a polished look and feel.
 
 ## How To Use
 
@@ -59,9 +60,7 @@ This software uses the following open source packages:
 
 - [Next Js - App Router](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [GraphQL](https://graphql.org/)
-- [HyGraph](https://hygraph.com/)
-- [Typescript](https://www.typescriptlang.org/)
+- [dnd-kit](https://dndkit.com/)
 
 ## Support
 
@@ -75,8 +74,8 @@ This software uses the following open source packages:
 
 ## You may also like...
 
-- [Pomolectron](https://github.com/ashiq72) - A pomodoro app
-- [Correo](https://github.com/ashiq72) - A menubar/taskbar Gmail App for Windows and macOS
+- [crowdfunding](https://github.com/ashiq72/crowdfunding-application-client) - A crowdfunding for Windows and mac
+- - [Travel To Go](https://github.com/ashiq72/travel-services-reviews-website-client) - A Travel reaviw website
 
 ## License
 
