@@ -1,11 +1,11 @@
 <h1 align="center">
   <br>
- Kawaiisss-server
+ Car-rental
   <br>
 </h1>
 
 <p align="center">
-  Live Site: <a href="https://kawaiisss-server.vercel.app/">https://kawaiisss-server.vercel.app/
+  Live Site: <a href="https://github.com/ashiq72/car-rental">https://github.com/ashiq72/car-rental
 </a>
   
 </p>
