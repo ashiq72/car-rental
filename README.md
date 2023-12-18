@@ -60,7 +60,6 @@ This software uses the following open source packages:
 
 - [Next Js - App Router](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [dnd-kit](https://dndkit.com/)
 
 ## Support
 
