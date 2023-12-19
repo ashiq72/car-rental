@@ -76,7 +76,7 @@ This software uses the following open source packages:
 - [crowdfunding](https://github.com/ashiq72/crowdfunding-application-client) - A crowdfunding for Windows and mac
 - - [Travel To Go](https://github.com/ashiq72/travel-services-reviews-website-client) - A Travel reaviw website
 
-## License
+## License:
 
 MIT
 
